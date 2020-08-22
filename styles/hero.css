@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --roxo: #5d1499;
+    --amarelo: #ffcc3e;
+    --cinzatextos: #313e4f;
+    --azulclaro:#0880C7;
+    --cinzaclaro:lightgrey;
+  }
+
+  body {
+    height: 100vh;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /*---------------------------------------------*/
+  /*---------------------HERO--------------------*/
+  /*---------------------------------------------*/
+
+  header {
+    height: 93vh;
+
+    background-image: url("../imagens/fundo.png");
+    background-size: auto 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+
+  }
+
+  .menu {
+    width: 100vw;
+    background: var(--roxo);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  .box-menu {
+    width: 1100px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+
+  #linksMobile{
+    display:flex;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .menu .icon {
+    display: none;
+  }
+
+  .topnav {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu a {
+    color: var(--amarelo);
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+
+  .menu a:last-child {
+    box-sizing: border-box;
+    border: 1px solid var(--amarelo);
+    border-radius: 8px;
+    padding: 10px 36px;
+  }
+
+  .div-vpbus {
+    margin: 10px 160px 10px 0;
+    text-align: right;
+  }
+
+  .div-vpbus img {
+    width: 350px;
+  }
+
+  .title-subtitle {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  .main-title {
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 8em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -4px 4px #0e1b30;
+  }
+
+  .subtitle {
+    width: 1100px;
+
+    line-height: 1.5em;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  @media (max-width: 1124px) {
+    .box-menu,
+    .subtitle {
+     width:800px;
+    }
+    .div-vpbus {
+      margin-right:10px;
+     }
+  }
+
+  @media (max-width: 800px) {
+    .box-menu{
+      width: 700px;
+    }
+    .box-menu img{
+      padding: 0 10px;
+    }
+
+    .div-vpbus {
+      margin-right:80px;
+    }
+
+    .div-vpbus img {
+      width:250px;
+    }
+
+    .subtitle {
+     width:700px;
+     margin:0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    header{
+      margin-top:50px;
+    }
+
+    .logo{
+      width:80px;
+     margin:20px 5px;
+    }
+
+    .menu {
+      overflow: visible;
+    }
+
+    .menu .icon {
+      color:var(--amarelo);
+      font-size:16px;
+      padding:0;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin:10px 5px;
+      border:none;
+    }
+
+    .menu .icon:hover {
+      color: var(--amarelo);
+      border:none;
+    }
+
+    .menu-active {
+      color: white;
+    }
+
+    .menu a:last-child {
+      border:none;
+    }
+
+    .menu a:last-child{
+      padding: 14px 16px;
+    }
+
+    .box-menu{
+      height:45px;
+      width: 100vw;
+
+      display: block;
+      margin: 0 auto;
+    }
+
+    .div-vpbus {
+      margin-top:150px;
+      margin-right:5px;
+     }
+
+    .div-vpbus img {
+      width: 160px;
+      text-align:right;
+    }
+
+    .main-title {
+     font-size:50px;
+    }
+
+    .subtitle{
+      width: 340px;
+      font-size:16px;
+      margin:20px 0;
+    }
+
+    .topnav{
+      margin:0;
+      padding:0;
+      height:120px;
+    }
+
+    .topnav a {
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      border-bottom: 1px solid var(--cinzaclaro);
+    }
+
+    #linksMobile{
+      width:100vw;
+      margin-top:13px;
+      background-color:white;
+    }
+
+    .topnav #linksMobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 380px){
+    .box-menu {
+      width: 100vw;
+    }
+    .main-title{
+      font-size:30px;
+    }
+
+    .subtitle{
+      width:300px;
+    }
+  }
+
+  @media (max-width:300px){
+    .main-title{
+      font-size:28px;
+    }
+
+    .subtitle{
+      width:260px;
+    }
+  }

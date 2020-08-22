@@ -1,0 +1,137 @@
+/*---------------------------------------------*/
+/*------------------ROUTES---------------------*/
+/*---------------------------------------------*/
+
+
+.destaque-vagas {
+    height: auto;
+    background: whitesmoke;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .destaque-vagas h2 {
+    color: var(--cinzatextos);
+    font-size: 4em;
+    text-align: center;
+
+    margin: 100px 0;
+  }
+
+  .grid-vagas {
+    background: whitesmoke;
+    display: grid;
+    gap: 4em;
+    grid-template-columns: repeat(4, 300px);
+
+    align-content: center;
+    justify-content: center;
+  }
+
+  .card-vagas {
+    height: 400px;
+    background: white;
+    box-shadow: 1px 0px 5px var(--cinzaclaro);
+
+    text-align: center;
+    position: relative;
+
+    padding: 15px;
+  }
+
+  .card-vagas h3 {
+    color: var(--roxo);
+    font-size: 2em;
+
+    margin: 20px;
+  }
+
+  .card-vagas p {
+    color: var(--cinzatextos);
+    line-height: 1.5em;
+    font-size: 16px;
+
+    margin-top: 30px;
+  }
+
+  .a-btn-quero {
+    background-color: white;
+    border: 1px solid var(--roxo);
+    border-radius: 8px;
+    color: var(--roxo);
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    font-size: 16px;
+
+    right: 26%;
+    bottom: 0;
+    margin: 40px 0;
+    padding: 8px 45px;
+
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .a-btn-quero:hover {
+    background-color: var(--roxo);
+    color: var(--amarelo);
+  }
+
+  @media (max-width: 1330px) {
+    .grid-vagas {
+      grid-template-columns: repeat(2, 370px);
+    }
+
+    .a-btn-quero {
+      right:31%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .grid-vagas {
+      grid-template-columns: repeat(2, 300px);
+    }
+  }
+
+  @media (max-width: 575px) {
+    .grid-vagas {
+      grid-template-columns: repeat(1, 340px);
+    }
+    .destaque-vagas h2 {
+      font-size: 25px;
+      margin: 50px 0;
+    }
+  }
+
+  @media (max-width: 380px){
+    .grid-vagas{
+      grid-template-columns: repeat(1, 300px);
+    }
+
+    .card-vagas{
+      height:420px;
+    }
+
+    .a-btn-quero {
+      right: 26%;
+    }
+  }
+
+  @media (max-width:300px){
+    .grid-vagas{
+      grid-template-columns: repeat(1, 260px);
+    }
+
+    .card-vagas{
+      height:450px;
+    }
+
+    .a-btn-quero {
+      right: 23%;
+    }
+  }

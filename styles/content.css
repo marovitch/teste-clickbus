@@ -1,0 +1,148 @@
+/*---------------------------------------------*/
+/*-------------------CONTENT-------------------*/
+/*---------------------------------------------*/
+
+.apresentacao {
+    background: white;
+    color: var(--cinzatextos);
+    font-size: 1.7em;
+    line-height: 1.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em 1em 3em 1em;
+  }
+
+  .apresentacao h2 {
+    color: var(--cinzatextos);
+    font-size: 2.5em;
+    margin:80px 0 40px 0;
+  }
+
+  .texto-apresentacao {
+    padding: 2em;
+  }
+
+  .grid-apresentacao {
+    height: auto;
+    width: auto;
+
+    background: white;
+    display: grid; /*declaracao do grid*/
+    gap: 2em;
+    grid-template-columns: 600px 500px;
+  }
+
+
+  .div-galera {
+    margin: 4.5em auto 0 auto;
+    text-align: center;
+
+  }
+
+  .div-galera img {
+    width: 400px;
+  }
+
+  .negrito {
+    font-weight: 800;
+  }
+
+  .a-btn-candidatar,
+  .a-btn-tdsvagas {
+    background-color: var(--roxo);
+    border: 1px solid var(--roxo);
+    border-radius: 8px;
+    color: var(--amarelo);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+
+    margin: 40px auto;
+    padding: 15px 45px;
+
+    transition: 0.5s;
+  }
+
+  .a-btn-candidatar:hover,
+  .a-btn-tdsvagas:hover {
+    background-color: var(--amarelo);
+    border: 1px solid var(--amarelo);
+    color: var(--roxo);
+  }
+
+  .a-btn-tdsvagas {
+    text-decoration: none;
+
+    margin: 100px 0;
+    padding: 15px 80px;
+  }
+
+  @media (max-width: 1124px) {
+    .grid-apresentacao {
+      grid-template-columns: 550px 300px;
+    }
+    .div-galera img {
+      width:300px;
+      margin-top:50px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .grid-apresentacao  {
+      grid-template-columns: 450px 250px;
+    }
+    .div-galera img {
+      width: 250px;
+    }
+  }
+
+
+  @media (max-width: 575px) {
+    .grid-apresentacao{
+      grid-template-columns: repeat(1, 340px);
+    }
+    .texto-apresentacao{
+      padding:0;
+      text-align:center;
+    }
+    .div-galera {
+      margin: 0;
+      text-align: center;
+    }
+    .div-galera img{
+      margin:30px 0;
+    }
+
+    .a-btn-candidatar,
+    .a-btn-tdsvagas{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:15px 50px;
+    }
+    .apresentacao h2 {
+      font-size: 25px;
+      text-align:center;
+    }
+  }
+
+  @media (max-width: 380px){
+    .grid-apresentacao {
+      grid-template-columns: repeat(1, 300px);
+    }
+  }
+
+  @media (max-width:300px){
+    .grid-apresentacao {
+      grid-template-columns: repeat(1, 260px);
+    }
+
+    .a-btn-candidatar,
+    .a-btn-tdsvagas{
+
+    padding:10px 20px;
+    }
+  }
