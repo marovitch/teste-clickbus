@@ -64,6 +64,7 @@
     padding: 15px 45px;
 
     transition: 0.5s;
+    text-decoration: none;
   }
 
   .a-btn-candidatar:hover,
@@ -74,8 +75,6 @@
   }
 
   .a-btn-tdsvagas {
-    text-decoration: none;
-
     margin: 100px 0;
     padding: 15px 80px;
   }
