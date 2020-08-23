@@ -70,11 +70,8 @@ footer {
     .box-footer{
       width: 700px;
     }
-  }
-
-  @media (max-width: 800px) {
     footer h4 {
-      width:100vw;
+      width:700px;
     }
   }
 
