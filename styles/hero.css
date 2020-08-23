@@ -291,6 +291,9 @@
 
 
   @media (max-width:325px){
+    html{
+      margin:-2.5px;
+    }
     .main-title{
       font-size:28px;
     }
@@ -303,12 +306,7 @@
       padding:0;
       height:120px;
     }
-
-    html{
-      margin:-2.5px;
-    }
   }
-
 
   @media (max-width:320px){
     html{
