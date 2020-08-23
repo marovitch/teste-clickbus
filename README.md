@@ -1,2 +1,4 @@
-# teste-clickbus
-Elaboração de uma landing page para um teste da ClickBus
+# Teste para processo seletivo da ClickBus
+Olá! :) 
+
+Muito obrigada por estar vendo meu código. Espero que goste! ♥
