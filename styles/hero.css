@@ -36,7 +36,7 @@
   }
 
   .menu {
-    width: 100vw;
+    width: 100%;
     background: var(--roxo);
     overflow: hidden;
     position: fixed;
@@ -165,7 +165,7 @@
 
     .logo{
       width:80px;
-     margin:20px 5px;
+     margin:20px 10px;
     }
 
     .menu {
@@ -180,7 +180,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      margin:10px 5px;
+      margin:10px 10px;
       border:none;
     }
 
@@ -203,7 +203,7 @@
 
     .box-menu{
       height:45px;
-      width: 100vw;
+      width: 100%;
 
       display: block;
       margin: 0 auto;
@@ -245,7 +245,7 @@
     }
 
     #linksMobile{
-      width:100vw;
+      width:100%;
       margin-top:13px;
       background-color:white;
     }
@@ -257,7 +257,7 @@
 
   @media (max-width: 380px){
     .box-menu {
-      width: 100vw;
+      width: 100%;
     }
     .main-title{
       font-size:30px;
@@ -266,9 +266,31 @@
     .subtitle{
       width:300px;
     }
+
+    .topnav{
+      margin:0;
+      padding:0;
+      height:120px;
+    }
+
+    html{
+      margin:-1.5px;
+    }
+
   }
 
-  @media (max-width:300px){
+  @media (max-width:375px){
+    html{
+      margin:-0.7px;
+    }
+
+  @media (max-width:360px){
+    html{
+      margin:-1.2px;
+    }
+
+
+  @media (max-width:325px){
     .main-title{
       font-size:28px;
     }
@@ -276,4 +298,20 @@
     .subtitle{
       width:260px;
     }
+    .topnav{
+      margin:0;
+      padding:0;
+      height:120px;
+    }
+
+    html{
+      margin:-2.5px;
+    }
   }
+
+
+  @media (max-width:320px){
+    html{
+      margin:-3.5px;
+    }
+ }
